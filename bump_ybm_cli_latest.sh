@@ -40,6 +40,9 @@ class Ybm < Formula
 
       def install
         bin.install "ybm"
+        bash_completion.install "completions/ybm.bash" => "ybm"
+        zsh_completion.install "completions/ybm.zsh" => "_ybm"
+        fish_completion.install "completions/ybm.fish"
       end
     end
     if Hardware::CPU.arm?
@@ -48,6 +51,9 @@ class Ybm < Formula
 
       def install
         bin.install "ybm"
+        bash_completion.install "completions/ybm.bash" => "ybm"
+        zsh_completion.install "completions/ybm.zsh" => "_ybm"
+        fish_completion.install "completions/ybm.fish"
       end
     end
   end
@@ -59,6 +65,9 @@ class Ybm < Formula
 
       def install
         bin.install "ybm"
+        bash_completion.install "completions/ybm.bash" => "ybm"
+        zsh_completion.install "completions/ybm.zsh" => "_ybm"
+        fish_completion.install "completions/ybm.fish"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
@@ -67,6 +76,9 @@ class Ybm < Formula
 
       def install
         bin.install "ybm"
+        bash_completion.install "completions/ybm.bash" => "ybm"
+        zsh_completion.install "completions/ybm.zsh" => "_ybm"
+        fish_completion.install "completions/ybm.fish"
       end
     end
   end
